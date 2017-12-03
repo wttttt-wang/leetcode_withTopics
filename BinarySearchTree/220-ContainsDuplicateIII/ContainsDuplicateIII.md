@@ -1,6 +1,7 @@
-## contains duplicate III
-
+# contains duplicate III
+## Problem Define
 * [leetcode](https://leetcode.com/problems/contains-duplicate-iii/description/)
+* Given a constraint on the range of the values of the elements to be considered duplicates.
 * @ **Big Number** problem (This is really important!)  —> convert to long type and this needs to reposition numbers to positive.
                             But for python, overflow is not needed to consider at all.
 

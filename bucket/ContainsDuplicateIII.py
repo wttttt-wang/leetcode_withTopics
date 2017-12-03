@@ -3,6 +3,7 @@
         or it will return True directly.
 
 @ Corner case: Big Number for nums[i] + k will overflow. But for python u don't need to consider overflow.
+@ For more info: see BinarySearchTree/220-ContainsDuplicateIII
 """
 class Solution(object):
     def containsNearbyAlmostDuplicate(self, nums, k, t):
