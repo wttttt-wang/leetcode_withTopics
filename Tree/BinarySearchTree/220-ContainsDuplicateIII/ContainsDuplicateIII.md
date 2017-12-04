@@ -2,7 +2,7 @@
 ## Problem Define
 * [leetcode](https://leetcode.com/problems/contains-duplicate-iii/description/)
 * Given a constraint on the range of the values of the elements to be considered duplicates.
-* @ **Big Number** problem (This is really important!)  —> convert to long type and this needs to reposition numbers to positive.
+* @ **Big Number** problem (This is really important!)  —> convert to long type and this needs to reposition numbers to positive.   
                             But for python, overflow is not needed to consider at all.
 
 ## Solution 1
@@ -11,7 +11,7 @@
 
 ## Solution2
 
-* ​@ bucket  --> each bucket with length t, and will store one element at most(or it will return True directly.)
+* ​@ bucket  --> each bucket with length t, and will store one element at most(or it will return True directly.)   
                 The nearest element is in bucket or bucket - 1 or bucket + 1.
 
 
