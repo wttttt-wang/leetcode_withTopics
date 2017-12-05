@@ -1,6 +1,6 @@
 # Count of range sum
 ## Problem Define
-* [leetcode](https://leetcode.com/problems/count-of-range-sum/description/)
+* [leetcode](https://leetcode.com/problems/count-of-range-sum/description/count-of-range-sum*.md)
 1. for range sum --> use prefix sum. 
 2. Then the problem convert to: given an array, find count of pairs where `lower <= arr[i] - arr[j] <= upper`
 3. Then the most straightforward solution is to compute diff of each pair and check. This is O(N ^ 2) time.
@@ -24,4 +24,4 @@
 * Segment Tree
 
 ## For more info
-* [link](https://www.hrwhisper.me/leetcode-count-of-range-sum/)
+* [link](https://www.hrwhisper.me/leetcode-count-of-range-sum/count-of-range-sum*.md)

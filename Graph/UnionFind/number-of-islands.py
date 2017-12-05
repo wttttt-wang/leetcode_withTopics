@@ -14,7 +14,7 @@ class Solution(object):
         if not grid or not grid[0]:
             return 0
         m, n = len(grid), len(grid[0])
-        PATH_X, PATH_Y = [-1, 0, 0, 1], [0, -1, 1, 0]
+        PATH_X, PATH_Y = [-1, 0], [0, -1]
         unf = UnionFind(grid)
         for x in range(m):
             for y in range(n):
@@ -47,4 +47,3 @@ class UnionFind(object):
         if self.parents[x] != x:
             self.parents[x] = self.find(self.parents[x])
         return self.parents[x]
-
