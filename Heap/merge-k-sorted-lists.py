@@ -2,6 +2,7 @@
 Merge k Sorted Lists
 @ Easy problem in 'Hard' tag. > <
 @ For more info, see 'Heap/merge-k-sorted-lists'
+@ O(NlogK) time, N is total length of all k lists
 """
 from heapq import *
 
@@ -12,17 +13,15 @@ class Solution(object):
         :type lists: List[ListNode]
         :rtype: ListNode
         """
-        heap = []
-        # 1. initialize heap
-        for h in lists:
-            if h:
-                heappush(heap, (h.val, h))
-        resultHead = ListNode(0)
-        tmp = resultHead
+        heap, results = [], []
+        for l in lists:
+            if l:
+                heappush(heap, (l.val, l))
         while heap:
-            _, node = heappop(heap)
-            tmp.next = node
-            tmp = tmp.next
-            if node.next:
-                heappush(heap, (node.next.val, node.next))
-        return resultHead.next
+            v, n = heappop(heap)
+            results.append(v)
+            if n.next:
+                heappush(heap, (n.next.val, n.next))
+        return results
+
+

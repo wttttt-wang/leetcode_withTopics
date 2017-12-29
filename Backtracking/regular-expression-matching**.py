@@ -12,6 +12,7 @@ Regular Expression Matching
 
 class Solution(object):
     cache = {}   # global cache
+
     def isMatch(self, s, p):
         """
         :type s: str
