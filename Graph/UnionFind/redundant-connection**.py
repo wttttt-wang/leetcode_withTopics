@@ -1,6 +1,6 @@
 """
 Redundant Connection
-@ Note: Start from left to right to ensure return the right-most redundant connection.
+@ Note: Start from 'left to right' to ensure return the right-most redundant connection.
 @ Explanation: Use union find to find the link of two vertices that has already been connected, that is a loop is found.
 """
 
