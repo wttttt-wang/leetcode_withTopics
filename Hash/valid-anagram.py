@@ -4,6 +4,25 @@ Valid Anagram
 """
 
 
+class SolutionV2(object):
+    def isAnagram(self, s, t):
+        """
+        :type s: str
+        :type t: str
+        :rtype: bool
+        """
+        if len(s) != len(t):
+            return False
+        occurs_s = [0] * 26
+        for c in s:
+            occurs_s[ord(c) - ord('a')] += 1
+        for c in t:
+            occurs_s[ord(c) - ord('a')] -= 1
+            if occurs_s[ord(c) - ord('a')] < 0:
+                return False
+        return True
+
+
 class Solution(object):
     def isAnagram(self, s, t):
         """
@@ -19,4 +38,3 @@ class Solution(object):
                 return False
             occurs[val] -= 1
         return True if not sum(occurs.values()) else False  # do not forget to check this!!!
-
