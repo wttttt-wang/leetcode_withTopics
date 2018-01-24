@@ -2,6 +2,7 @@
 H-Index
 @ Sort: O(NlogN) time & O(1) space
 @ For solution with O(N) space & O(N) time, refer to 'Sort/BucketSort/h-index'
+@ Update: After sort, we can use binary search to find the result, refer to 'BinarySearch/H-Index II'
 """
 
 
